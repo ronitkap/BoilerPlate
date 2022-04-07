@@ -34,7 +34,7 @@ const commonPlugins = [
     name: "products",
     filename: "remoteEntry.js",
     remotes: {},
-    exposes: { "./ProductIndex": "./src/Index.ts" },
+    exposes: { "./ProductIndex": "./src/component/App.tsx" },
     shared: {
       ...dependencies,
       react: {

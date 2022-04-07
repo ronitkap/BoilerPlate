@@ -6,7 +6,7 @@ const devConfig = {
   },
   module: { rules: [...commonRules] },
   output: {
-    publicPath: "/",
+    publicPath: "http://localhost:8081/",
   },
   devtool: "inline-source-map",
   devServer: {

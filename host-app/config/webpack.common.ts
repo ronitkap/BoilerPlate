@@ -36,7 +36,6 @@ const commonPlugins = [
     filename: "remoteEntry.js",
     remotes: { products: "products@http://localhost:8081/remoteEntry.js" },
     exposes: {},
-
     shared: {
       ...dependencies,
       react: {
