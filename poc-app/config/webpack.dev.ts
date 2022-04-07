@@ -1,5 +1,4 @@
 import commonPlugins, { commonResolve, commonRules } from "./webpack.common";
-
 const devConfig = {
   mode: "development",
   resolve: {
@@ -7,7 +6,6 @@ const devConfig = {
   },
   module: { rules: [...commonRules] },
   output: {
-    // Public path acts as a context url path
     publicPath: "/",
   },
   devtool: "inline-source-map",

@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
+import App from "./App";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const Bootstrap = () => {
   return (
     <BrowserRouter>
-      <h1>HOST APP</h1>
+      <App></App>
     </BrowserRouter>
   );
 };

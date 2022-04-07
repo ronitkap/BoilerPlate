@@ -4,7 +4,6 @@ import HtmlWebPackPlugin from "html-webpack-plugin";
 import { dependencies } from "../package.json";
 
 const { ModuleFederationPlugin } = webpack.container;
-
 export const commonResolve = {
   extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
 };
@@ -32,12 +31,10 @@ export const commonRules = [
 
 const commonPlugins = [
   new ModuleFederationPlugin({
-    name: "example",
+    name: "products",
     filename: "remoteEntry.js",
     remotes: {},
-    exposes: {
-      //
-    },
+    exposes: { "./ProductIndex": "./src/Index.ts" },
     shared: {
       ...dependencies,
       react: {
