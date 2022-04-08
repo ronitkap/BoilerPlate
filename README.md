@@ -27,7 +27,7 @@ To just check the POC app open http://localhost:8081 on your browser
 - `/config` contains the webpack configuration.
 - `/config/webpack.common.ts` defines the `ModuleFederationPlugin`.
 - `/config/webpack.dev.ts` contains development env configuration.
-- `/config/webpack.prod.ts is an empty directory but will consists of prod env configuration.
+- `/config/webpack.prod.ts` is an empty directory but will consists of prod env configuration.
 
 ## Code Conventions
 
